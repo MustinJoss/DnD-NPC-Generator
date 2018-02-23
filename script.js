@@ -1,13 +1,3 @@
-// function to generate random number for use in other functions
-function getRandom(){
-    var randomNum = Math.floor(Math.random)
-    return randomNum
-}
-
-// change npc race
-function changeRace(){
-}
-
 // change npc name: switch
 function getName(){
     var nameVal = document.getElementById("npcName");
@@ -61,12 +51,12 @@ function getName(){
     nameVal.innerHTML = rand1 + " " + rand2;
 }
 
-// generate alignment
+/* generate alignment
 function getAlignment(){
     var alignment = ["Lawful Good", "Netural Good", "Chaotic Good", "Lawful Neutral", "Neutral", "Chaotic Neutral", "Lawful Evil", "Neutral Evil", "Chaotic Evil"];
     var alignmentVal = document.getElementById("npcAlignment");
     alignmentVal.innerHTML = alignment[Math.floor(Math.random() * alignment.length)];
-}
+}*/
 
 // generate appearance
 function getAppearance(){
