@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <title>NPC Generator</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>NPC Generator</h1>
+        <div id="npcName" class="box3">...</div>
+        <div id="npcOptions" class="box">   
+            <form>
+                Gender:
+                <select id = "sexList"> <!--onchange = "changeSex()">-->
+                    <option value = "1">Male</option>
+                    <option value = "2">Female</option>
+                </select>
+            <form>
+            <br></br>
+            <form>
+                Race:
+                <select id = "raceList">
+                    <option value = "1">Dwarf</option>
+                    <option value = "2">Elf</option>
+                    <option value = "3">Halfling</option>
+                    <option value = "4">Human</option>
+                    <!--<option value = "5">Dragonborn</option>
+                    <option value = "6">Gnome</option>
+                    <option value = "7">Half-Elf</option>
+                    <option value = "8">Half-Orc</option>
+                    <option value = "9">Tiefling</option>-->
+                </select>
+            </form>
+            <br></br>
+            <button class="button" onclick="genNPC()">Generate</button> 
+        </div>
+        <div class="box">
+            <h3>Plot Hook:</h3>
+            <div id="plotHook" class="otherBox">...</div>
+        </div>
+        <div class="box2">
+            <!--<h3>Alignment:</h3>
+            <div id="npcAlignment" class="trait">...</div>-->
+            <h3>Appearance:</h3>    
+            <div id="npcAppearance" class="trait">...</div>
+            <h3>Abilities:</h3>  
+            <div id="npcAbilities" class="trait">...</div>
+            <h3>Talent:</h3>  
+            <div id="npcTalent" class="trait">...</div>
+            <h3>Mannerisms:</h3>  
+            <div id="npcMannerisms" class="trait">...</div>
+        </div>
+        <div class="box2">    
+            <h3>Disposition:</h3>  
+            <div id="npcDisposition" class="trait">...</div>
+            <h3>Ideals:</h3>  
+            <div id="npcIdeals" class="trait">...</div>
+            <h3>Bond:</h3>  
+            <div id="npcBond" class="trait">...</div>
+            <h3>Flaw or Secret:</h3>  
+            <div id="npcFlaw" class="trait">...</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
